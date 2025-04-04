@@ -266,7 +266,7 @@ elif data=='DeepRSMA':
             dti_val_auc, dti_val_aupr = dti_evaluate(model, dti_val_loader, device)
 
             if dti_val_aupr > best_set['val_aupr']:
-                best_set['val_aupr'] = dti_val_aupr
+                best_set['val_aupr'] = dti_val_auc
                 best_set['epoch'] = epoch
                 torch.save(model.state_dict(), f'./Model/trained_weight/DeepRSMA_data/model_fold{fold}.pt')
 
