@@ -40,6 +40,7 @@ gdown https://drive.google.com/uc?id=11Jf8I5TpsupC2_Dd8zTWgVyPXbgM5fXm
 gdown https://drive.google.com/uc?id=1PFk1IqjQIYDrSGXYHRm_9FVlKjI-YfWH
 gdown https://drive.google.com/uc?id=1Sa7Stz9POe8BsyCHfOZUpCk3tUgeUxyS
 gdown https://drive.google.com/uc?id=1A1Kq0B5-t9IDbEFUVbPHJocMzXP7O7W8
+```
 
 To perform interaction prediction using the pre-trained weights, run the following command:
 ```bash
@@ -48,7 +49,7 @@ python test.py
 
 ### 4. Train
 If you'd like to train the model from scratch or fine-tune it, use the following command:
-```
+```bash
 python train.py
 ```
 
