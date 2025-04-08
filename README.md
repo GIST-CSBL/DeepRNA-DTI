@@ -48,7 +48,7 @@ python test.py
 
 ### 4. Train
 If you'd like to train the model from scratch or fine-tune it, use the following command:
-```bash
+```
 python train.py
 ```
 
