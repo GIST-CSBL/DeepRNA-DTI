@@ -2,7 +2,7 @@ import os
 
 """Setup CUDA device."""
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = str(3)
+os.environ["CUDA_VISIBLE_DEVICES"] = str(2)
 
 import sys
 import argparse
@@ -200,7 +200,7 @@ def main():
                 param.requires_grad = True
         
         # Optimizer
-        optimizer = torch.optim.Adam(
+        optimizer = torch.optim.AdamW(
             model.parameters(), 
             lr=args.learning_rate, 
             weight_decay=args.weight_decay
