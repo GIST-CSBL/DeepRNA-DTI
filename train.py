@@ -45,8 +45,6 @@ def parse_args():
                         help='Weight decay (L2 regularization)')
     parser.add_argument('--init', type=bool, default=True,
                         help='Whether to initialize weights')
-    parser.add_argument('--init_method', type=str, default='he',
-                        help='Weight initialization method: xavier, he ')
     return parser.parse_args()
 
 
@@ -191,7 +189,6 @@ def main():
             rna_fm_model, 
             molebert_model, 
             init=args.init,
-            init_method=args.init_method
         )
         model = model.to(device)
         
