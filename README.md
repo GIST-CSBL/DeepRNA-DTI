@@ -114,10 +114,10 @@ python train.py --train_type unseen_pair --num_epochs 100
 
 ```
 Dataset/
-├── unseen_pair/          # Both RNA & compound unseen at test time
+├── unseen_pair/          # Pair unseen at test time
 ├── unseen_rna/           # RNA unseen, compounds from training
 ├── unseen_compound/      # Compounds unseen, RNA from training
-└── unseen_both/          # Alternative split with both unseen
+└── unseen_both/          # Both RNA and compound unseen at test time
     ├── dti_data/         # Drug-target interaction data
     │   ├── train_fold0/
     │   │   └── raw/
